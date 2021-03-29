@@ -1,10 +1,18 @@
 package com.example.mapper;
 
+import java.time.LocalDate;
+import java.util.Date;
+
+import javax.annotation.sql.DataSourceDefinition;
+
 import org.springframework.batch.item.file.mapping.FieldSetMapper;
 import org.springframework.batch.item.file.transform.FieldSet;
 import org.springframework.validation.BindException;
 
 import com.example.model.Customer;
+
+import lombok.Builder;
+import lombok.Data;
 
 
 public class CustomerFieldSetMapper implements FieldSetMapper<Customer> {
